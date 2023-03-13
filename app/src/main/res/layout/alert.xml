@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#464A65"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/alertTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Agreement"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="9dp"
+            android:text="This application is solely for research purpose.
+The voice recording provided by you will be used for research and development purposes.
+Your voice will not be disclosed to any third party.
+Do you agree to continue?"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+
+            android:textSize="24sp" />
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/cancelbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:backgroundTint="#281F37"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:text="No"
+            android:background="@drawable/button"
+            android:textAllCaps="false"></Button>
+
+        <Button
+            android:id="@+id/okbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:background="@drawable/button"
+            android:backgroundTint="#281F37"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:text="Yes"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</LinearLayout>
